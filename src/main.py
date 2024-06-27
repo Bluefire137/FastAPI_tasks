@@ -1,28 +1,15 @@
-from fastapi import FastAPI, APIRouter, Depends
-from contextlib import asynccontextmanager
+from fastapi import FastAPI, Depends
+
 
 from fastapi_users import FastAPIUsers
 
-from auth.auth import auth_backend
-from auth.database import User
+from auth.base_config import auth_backend
+from database import User
 from auth.manager import get_user_manager
-from auth.schemas import UserRead, UserCreate
-from database import delete_tables, create_tables
-from router import router as tasks_router
+from auth.auth_schemas import UserRead, UserCreate
+from tasks.router import router as router_task
 
-
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    await delete_tables()
-    print("База очищена")
-    await create_tables()
-    print("База готова к работе")
-    yield
-    print("Выключение")
-
-
-app = FastAPI(lifespan=lifespan)
-app.include_router(tasks_router)
+app = FastAPI()
 
 fastapi_users = FastAPIUsers[User, int](
     get_user_manager,
@@ -41,13 +28,16 @@ app.include_router(
     tags=["Зарегистрироваться"],
 )
 
+app.include_router(router_task)
+
 current_user = fastapi_users.current_user()
 
 
-@app.get("/protected-route")
+@app.get("/protected-route", tags=["Защищенный вход"])
 def protected_route(user: User = Depends(current_user)):
     return f"Hello, {user.username}"
 
-@app.get("/unprotected-route")
+
+@app.get("/unprotected-route", tags=["Незащищенный вход"])
 def unprotected_route():
     return f"Hello, anonym"

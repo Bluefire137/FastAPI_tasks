@@ -4,35 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce6fe6c-0eb3-4ca6-a61d-c6a0957e0d78" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/FastAPI_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/0394be2f834f_database_creation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks.db" afterDir="false" />
+    <list default="true" id="9ce6fe6c-0eb3-4ca6-a61d-c6a0957e0d78" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/migrations/versions/63cddc27defb_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auth/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tasks/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tasks/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/0394be2f834f_database_creation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/base_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth_schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schemas.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +39,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -69,10 +60,18 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sinee/PycharmProjects/CRUD_users&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sinee/PycharmProjects/FastAPI_project/src/auth/auth_schemas.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/sinee/PycharmProjects/FastAPI_project/src/auth/auth_schemas.py&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sinee\PycharmProjects\FastAPI_project\src" />
+      <recent name="C:\Users\sinee\PycharmProjects\FastAPI_project" />
+      <recent name="C:\Users\sinee\PycharmProjects\FastAPI_project\src\auth" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="FastAPI_project" />
@@ -113,17 +112,39 @@
       <option name="presentableId" value="Default" />
       <updated>1718353461806</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1718960254133</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718960254133</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -131,5 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
 </project>
