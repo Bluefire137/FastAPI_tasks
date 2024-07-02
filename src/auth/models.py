@@ -4,6 +4,7 @@ from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
+
 class Role(Base):
     __tablename__ = "role"
 
@@ -13,6 +14,7 @@ class Role(Base):
 
     # Relationship to User
     users = relationship("User", back_populates="role")
+
 
 class User(Base):
     __tablename__ = "user"

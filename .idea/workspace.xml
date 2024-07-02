@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce6fe6c-0eb3-4ca6-a61d-c6a0957e0d78" name="Changes" comment="Added table Task">
-      <change afterPath="$PROJECT_DIR$/migrations/versions/7e3b7d56b420_reformat_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/база данных/task.csv" afterDir="false" />
+    <list default="true" id="9ce6fe6c-0eb3-4ca6-a61d-c6a0957e0d78" name="Changes" comment="Modified tables user and role">
+      <change afterPath="$PROJECT_DIR$/FastAPI_project.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tasks/schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tasks/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tasks/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tasks/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/база данных/task.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719476092088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modified tables user and role">
+      <option name="closed" value="true" />
+      <created>1719477942036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719477942036</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -150,6 +164,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
     <MESSAGE value="Added table Task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added table Task" />
+    <MESSAGE value="Modified tables user and role" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified tables user and role" />
   </component>
 </project>

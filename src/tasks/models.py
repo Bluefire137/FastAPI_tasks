@@ -1,4 +1,5 @@
 from sqlalchemy import Column, Integer, String, Text, TIMESTAMP, UniqueConstraint, Index, func
+
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -27,7 +28,6 @@ class Task(Base):
             "title": self.title,
             "content": self.content,
             "type": self.type,
-            "date": self.date,
             "created_at": self.created_at,
             "updated_at": self.updated_at,
         }
